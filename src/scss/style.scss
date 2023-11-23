@@ -1,0 +1,11 @@
+@use './abstract/fonts';
+
+@use './generic/generic';
+
+@use './pages/public_header';
+@use './pages/home/home';
+@use './pages/announcement/announcement';
+@use './pages/admin//admin_reg';
+@use './pages/admin/admin_log';
+@use './pages/admin/admin';
+@use './pages/footer';

@@ -1,0 +1,15 @@
+.messages_section{
+  position: relative;
+
+  &_delete_err, &_fetch_error{
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  &_list{
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.5rem;    
+  }
+}

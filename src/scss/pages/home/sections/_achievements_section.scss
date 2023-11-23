@@ -1,0 +1,140 @@
+@use '../../../abstract/media_queries' as mq;
+
+.achievements_section{
+  background-color: #f5efd3;
+  padding: 8rem 5rem 6.5rem 5rem;  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 8rem;
+
+  @include mq.responsive('xl')
+  {
+    padding: 6rem 2rem;
+    row-gap: 6rem;
+  }
+
+  &_sponsor{
+    overflow: hidden;
+    white-space: nowrap;
+    background-color: white;
+    border: 1px solid rgba(0,0,0,0.2);  
+    border-radius: 60px;  
+    width: 700px;    
+
+    @include mq.responsive('md')
+    {
+      width: 100%;      
+    }
+
+    &_slide{
+      display: inline-flex;
+      align-items: center;
+      column-gap: 2rem;
+      padding: 1rem 2rem;      
+      animation: slide 10s infinite linear;
+
+      p{
+        font-family: 'Amatic SC', sans-serif;
+        font-size: 2.5rem;
+        font-weight: bold;
+        text-transform: uppercase;
+        pointer-events: none;
+
+        @include mq.responsive('sm')
+        {
+          font-size: 2rem;    
+        }
+        @include mq.responsive('xxs')
+        {
+          font-size: 1.5rem;    
+        }
+      }
+
+      img{
+        filter: grayscale(100%);
+        aspect-ratio: 1/1;
+        width: 5rem;
+        border-radius: 10px;
+
+        @include mq.responsive('sm')
+        {
+          width: 4rem;  
+        }
+        @include mq.responsive('xxs')
+        {
+          width: 3rem;  
+        }
+      }
+
+      .hyphen{
+        margin-right: -2rem;
+      }
+
+      @keyframes slide {
+        from {
+          transform: translateX(0);
+        }
+        to {
+          transform: translateX(-100%);
+        }        
+      }
+    }     
+  }
+  &_sponsor:hover{
+    .achievements_section_sponsor_slide{
+      animation-play-state: paused;
+    }
+  }
+
+  &_box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    pointer-events: none;
+
+    @include mq.responsive('md')
+    {
+      flex-direction: column;
+      row-gap: 6rem;
+    }
+
+    &_bharathi, &_management, &_tech_tamil{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      row-gap: 1.5rem;
+
+      &_bharimg{
+        aspect-ratio: 480/544;
+        height: 6rem;
+      }
+      &_managimg{
+        aspect-ratio: 368/367;
+        height: 6rem;
+      }
+      &_techimg{
+        aspect-ratio: 368/276;
+        height: 6rem;
+      }
+
+      &_heading{
+        font-family: 'Amatic SC', sans-serif;
+        font-size: 2rem;
+        font-weight: bold;
+        text-transform: uppercase;
+      }
+
+      &_desc{
+        font-family: 'Space Mono', sans-serif;
+        text-align: center;
+        padding: 0 3rem;
+
+        @include mq.responsive('xs')
+        {
+          padding: 0 2rem;
+        }
+      }
+    }
+  }
+}

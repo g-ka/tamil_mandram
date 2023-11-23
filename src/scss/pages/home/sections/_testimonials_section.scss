@@ -1,0 +1,102 @@
+@use '../../../abstract/media_queries' as mq;
+
+.testimonials_section{
+  display: flex;
+  justify-content: center;
+  padding: 1rem 5rem;
+  pointer-events: none;
+
+  @include mq.responsive('xs')
+  {
+    padding: 1rem 2rem;
+  }
+
+  &_box{
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+    align-items: center;    
+    border-radius: 20px;
+    width: 400px;
+    position: relative;
+
+    &_testi{
+      font-family: 'Amatic SC', sans-serif;
+      font-size: 3.5rem;
+      font-weight: bold;
+      text-align: center;
+      text-transform: uppercase;
+
+      @include mq.responsive('sm')
+      {
+        font-size: 2.5rem;
+      }
+      @include mq.responsive('xs')
+      {
+        font-size: 2.5rem;
+      }
+      @include mq.responsive('xxs')
+      {
+        font-size: 2rem;
+      }
+    }
+  
+    &_by{
+      font-family: 'Space Mono', sans-serif;
+      font-size: 1.2rem;
+      font-weight: bold;
+      text-align: center;
+
+      @include mq.responsive('xxs')
+      {
+        font-size: 1rem;
+      }
+    }
+
+    &_one, &_two, &_three, &_four, &_five, &_six{
+      position: absolute;      
+      aspect-ratio: 368/313;
+
+      @include mq.responsive('lg')
+      {
+        display: none;
+      }
+    }
+    &_one{
+      width: 2rem;
+      right: -40%;
+      bottom: 45%;
+      transform: rotate(80deg);
+    }
+    &_two{
+      width: 3rem;
+      right: -50%;
+      bottom: 55%;
+      transform: rotate(70deg);
+    }
+    &_three{
+      width: 1.5rem;
+      right: -35%;
+      bottom: 60%;
+      transform: rotate(100deg);
+    }
+    &_four{
+      width: 2rem;
+      left: -40%;
+      bottom: 45%;
+      transform: rotate(-20deg);
+    }
+    &_five{
+      width: 3rem;
+      left: -50%;
+      bottom: 55%;
+      transform: rotate(-10deg);
+    }
+    &_six{
+      width: 1.5rem;
+      left: -35%;
+      bottom: 60%;
+      transform: rotate(-40deg);
+    }
+  }  
+}

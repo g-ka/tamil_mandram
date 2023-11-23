@@ -1,0 +1,18 @@
+.admin_section{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 2rem;
+
+  &_form{    
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+
+    &_title, &_desc, .point{
+      display: flex;
+      flex-direction: column;
+    }
+  }
+}

@@ -1,0 +1,104 @@
+@use '../../../abstract/media_queries' as mq;
+
+.events_section{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  row-gap: 5rem;
+  padding: 6rem 5rem;
+
+  @include mq.responsive('sm')
+  {
+    padding: 4rem 2rem;
+    row-gap: 4rem;
+  }
+  
+  &_head{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    pointer-events: none;
+
+    &_heading{
+      font-family: 'Amatic SC', sans-serif;
+      font-size: 5rem;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+  }  
+
+  &_box{
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 2rem;
+
+    @include mq.responsive('lg')
+    {
+      padding: 0 5rem;
+    }
+    @include mq.responsive('md')
+    {
+      padding: 0;
+    }
+
+    &_one, &_two{
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      column-gap: 2rem;
+      pointer-events: none;
+
+      @include mq.responsive('lg')
+      {
+        grid-template-columns: 1fr;
+        row-gap: 2rem;
+      }
+
+      &_tamil_classes, &_vidhai, &_pongal, &_tamil_new_year, &_contests, &_nittilam{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 1.5rem;
+        background-color: #ffeb13;
+        box-shadow: 2px 2px 2px rgba(0,0,0,0.2), -2px -2px 5px rgba(0, 0, 0, 0.2);
+        padding: 2rem;
+        border-radius: 15px;
+
+        img{
+          height: 5rem;            
+        }
+        &_tamimg{
+          aspect-ratio: 368/571;
+        }
+        &_vidimg{
+          aspect-ratio: 368/287;
+        }
+        &_ponimg{
+          aspect-ratio: 368/374;
+        }
+        &_newimg{
+          aspect-ratio: 368/274;
+        }
+        &_conimg{
+          aspect-ratio: 368/456;
+        }
+        &_nitimg{
+          aspect-ratio: 368/408;
+        }
+
+        &_heading{
+          font-family: 'Amatic SC', sans-serif;
+          font-size: 2rem;
+          font-weight: bold;
+          text-transform: uppercase;
+          text-align: center;
+        }
+
+        &_desc{
+          font-family: 'Space Mono', sans-serif;
+          text-align: center;
+          padding: 0 2rem;
+        }
+      }
+    }    
+  }
+}

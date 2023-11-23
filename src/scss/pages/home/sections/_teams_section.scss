@@ -1,0 +1,145 @@
+@use '../../../abstract/media_queries' as mq;
+
+.teams_section{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 9rem;
+  padding: 2rem 5rem;
+  position: relative;
+
+  @include mq.responsive('xxs')
+  {
+    padding: 2rem 0;
+  }
+
+  &_intro, &_tamilukkaga, &_ravusu, &_thiranazhi, &_cinema, &_design, &_video_editing{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffeb13;
+    border: 2px solid black;
+    height: 400px;
+    width: 300px;
+    position: sticky;
+    top: 70px;
+    border-radius: 10px;
+    padding: 2rem 2rem;
+    pointer-events: none;   
+
+    @include mq.responsive('xxs')
+    {
+      width: 230px;
+      height: 330px;
+      padding: 1rem;
+    }
+
+    &_img1{
+      aspect-ratio: 300/276;
+      width: 180px;
+    }
+    &_img2{
+      aspect-ratio: 320/340;
+      width: 130px;
+
+      @include mq.responsive('xxs')
+      {
+        width: 110px;
+      }
+    }
+    &_img3{
+      aspect-ratio: 302/355;
+      width: 135px;
+
+      @include mq.responsive('xxs')
+      {
+        width: 110px;
+      }
+    }
+    &_img4{
+      aspect-ratio: 315/310;
+      width: 130px;
+
+      @include mq.responsive('xxs')
+      {
+        width: 110px;
+      }
+    }
+    &_img5{
+      aspect-ratio: 29/32;
+      width: 140px;
+
+      @include mq.responsive('xxs')
+      {
+        width: 110px;
+      }
+    }
+    &_img6{
+      aspect-ratio: 258/286;
+      width: 140px;
+
+      @include mq.responsive('xxs')
+      {
+        width: 110px;
+      }
+    }
+    &_img7{
+      aspect-ratio: 339/313;
+      width: 140px;
+
+      @include mq.responsive('xxs')
+      {
+        width: 110px;
+      }
+    }
+
+    &_heading{
+      font-family: 'Amatic SC', sans-serif;
+      font-size: 2.5rem;
+      font-weight: bold;
+      text-align: center;
+      text-transform: uppercase;
+
+      @include mq.responsive('xxs')
+      {
+        font-size: 1.5rem;
+      }
+    }
+    &_desc{
+      font-family: 'Space Mono', sans-serif;
+      text-align: center;
+
+      @include mq.responsive('xxs')
+      {
+        font-size: 0.9rem;
+      }
+    }
+  }
+
+  &_intro{
+    transform: rotate(-6deg);
+  }
+  &_tamilukkaga{
+    transform: rotate(-4deg);
+    top: 60px;
+  }
+  &_ravusu{
+    transform: rotate(4deg);
+  }
+  &_thiranazhi{
+    transform: rotate(2deg);
+  }
+  &_cinema{
+    transform: rotate(4deg);
+    top: 80px;
+  }  
+  &_design{
+    transform: rotate(-3deg);
+    top: 75px;
+  }  
+  &_video_editing{
+    transform: rotate(2deg);
+    top: 65px;
+  }  
+}
