@@ -51,7 +51,7 @@ function App() {
     <>
       testing
       <Routes>
-        <Route path='/*' element={<Layout />}>
+        <Route path='/' element={<Layout />}>
 
           {/* Public Routes */}
           <Route path='/' element={<Home />} />
