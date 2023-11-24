@@ -1,0 +1,34 @@
+{
+  "files": {
+    "main.css": "/tamil_mandram/static/css/main.6c06d6a7.css",
+    "main.js": "/tamil_mandram/static/js/main.82bf6fe6.js",
+    "static/media/design.gif": "/tamil_mandram/static/media/design.0b58a747f964837db1e5.gif",
+    "static/media/network.gif": "/tamil_mandram/static/media/network.0bd8aed5ab821405f71a.gif",
+    "static/media/ravusu.gif": "/tamil_mandram/static/media/ravusu.c3d63e3056d9e09d6298.gif",
+    "static/media/thiranazhi.gif": "/tamil_mandram/static/media/thiranazhi.20adb5d334354e9b2dde.gif",
+    "static/media/tamilukkaga.gif": "/tamil_mandram/static/media/tamilukkaga.801369cdc23f2a8bb4e9.gif",
+    "static/media/video_editing.gif": "/tamil_mandram/static/media/video_editing.4444f61187ecae0b6d0e.gif",
+    "static/media/cinema.gif": "/tamil_mandram/static/media/cinema.f438cbed35ce6ba8be4d.gif",
+    "static/media/logo.png": "/tamil_mandram/static/media/logo.24f17d079dd32752dfac.png",
+    "static/media/contact.png": "/tamil_mandram/static/media/contact.784db74c1f5698dc40a3.png",
+    "static/media/management.png": "/tamil_mandram/static/media/management.a997ddd3a3d81df81c7c.png",
+    "static/media/pongal.png": "/tamil_mandram/static/media/pongal.e117a4391d442cbbebc7.png",
+    "static/media/nittilam.png": "/tamil_mandram/static/media/nittilam.4f5de9ce732015002e93.png",
+    "static/media/tamil_classes.png": "/tamil_mandram/static/media/tamil_classes.84e3c571c215e69b51b8.png",
+    "static/media/bharathi.png": "/tamil_mandram/static/media/bharathi.b074bc0b4eeb56b00ab1.png",
+    "static/media/butterfly.png": "/tamil_mandram/static/media/butterfly.77ed5646e9e8b5d26eaa.png",
+    "static/media/contests.png": "/tamil_mandram/static/media/contests.6a84147b3af81b25f3e0.png",
+    "static/media/vidhai.png": "/tamil_mandram/static/media/vidhai.ec517eafe181131dda05.png",
+    "static/media/heart.png": "/tamil_mandram/static/media/heart.4efbfff72cf7bf9d9ea7.png",
+    "static/media/snail.png": "/tamil_mandram/static/media/snail.c066f73ad6a8740c5675.png",
+    "static/media/number_one.png": "/tamil_mandram/static/media/number_one.42412a8abf1f766a55f9.png",
+    "static/media/tech_tamil.png": "/tamil_mandram/static/media/tech_tamil.894496c454b58f71eb31.png",
+    "index.html": "/tamil_mandram/index.html",
+    "main.6c06d6a7.css.map": "/tamil_mandram/static/css/main.6c06d6a7.css.map",
+    "main.82bf6fe6.js.map": "/tamil_mandram/static/js/main.82bf6fe6.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6c06d6a7.css",
+    "static/js/main.82bf6fe6.js"
+  ]
+}
