@@ -51,6 +51,7 @@ function App() {
     <>
       testing
       <Routes>
+        <Route index element={<Layout />} />
         <Route path='/' element={<Layout />}>
 
           {/* Public Routes */}
