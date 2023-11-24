@@ -48,27 +48,24 @@ function App() {
   }, []);
 
   return (
-    <>
-      testing
-      <Routes>
-        <Route path='' element={<Layout />}>
+    <Routes>
+      <Route path='' element={<Layout />}>
 
-          {/* Public Routes */}
-          <Route index element={<Home />} />
-          <Route path='/announcement' element={<Announcement />} />
-          <Route path='/admin_reg' element={<Admin_reg />}/>
-          <Route path='/admin_log' element={<Admin_log />}/>
+        {/* Public Routes */}
+        <Route index element={<Home />} />
+        <Route path='/announcement' element={<Announcement />} />
+        <Route path='/admin_reg' element={<Admin_reg />}/>
+        <Route path='/admin_log' element={<Admin_log />}/>
 
-          {/* Protected Routes */}
-          <Route path='/admin' element={<Auth_layout />}>
-            <Route index element={<Edits />} />
-            <Route path='/admin/messages' element={<Messages />} />
-            <Route path='/admin/visits' element={<Visits />} />            
-          </Route>          
-          
-        </Route>
-      </Routes>
-    </>      
+        {/* Protected Routes */}
+        <Route path='/admin' element={<Auth_layout />}>
+          <Route index element={<Edits />} />
+          <Route path='/admin/messages' element={<Messages />} />
+          <Route path='/admin/visits' element={<Visits />} />            
+        </Route>          
+        
+      </Route>
+    </Routes>  
   );
 }
 
