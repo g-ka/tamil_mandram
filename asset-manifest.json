@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/tamil_mandram/static/css/main.6c06d6a7.css",
-    "main.js": "/tamil_mandram/static/js/main.ba567b44.js",
+    "main.js": "/tamil_mandram/static/js/main.4bc4663a.js",
     "static/media/design.gif": "/tamil_mandram/static/media/design.0b58a747f964837db1e5.gif",
     "static/media/network.gif": "/tamil_mandram/static/media/network.0bd8aed5ab821405f71a.gif",
     "static/media/ravusu.gif": "/tamil_mandram/static/media/ravusu.c3d63e3056d9e09d6298.gif",
@@ -25,10 +25,10 @@
     "static/media/tech_tamil.png": "/tamil_mandram/static/media/tech_tamil.894496c454b58f71eb31.png",
     "index.html": "/tamil_mandram/index.html",
     "main.6c06d6a7.css.map": "/tamil_mandram/static/css/main.6c06d6a7.css.map",
-    "main.ba567b44.js.map": "/tamil_mandram/static/js/main.ba567b44.js.map"
+    "main.4bc4663a.js.map": "/tamil_mandram/static/js/main.4bc4663a.js.map"
   },
   "entrypoints": [
     "static/css/main.6c06d6a7.css",
-    "static/js/main.ba567b44.js"
+    "static/js/main.4bc4663a.js"
   ]
 }
