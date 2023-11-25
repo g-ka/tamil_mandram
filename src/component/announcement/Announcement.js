@@ -3,7 +3,7 @@ import Axios from '../../api/Axios';
 
 const Announcement = () => {
 
-  const domain = 'http://localhost:3500';
+  const domain = 'https://tamil-mandram-server.onrender.com';
 
   const [ details , set_details ] = useState([]);
   const [ is_loading , set_is_loading ] = useState(true);
