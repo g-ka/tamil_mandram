@@ -42,18 +42,18 @@ const Admin = () => {
         );
         const { announcement_details } = response.data;
         const details = announcement_details[0];        
-        set_title(details.title);
-        set_desc(details.desc);
-        set_one(details.points[0]);
-        set_two(details.points[1]);
-        set_three(details.points[2]);
-        set_four(details.points[3]);
-        set_five(details.points[4]);
-        set_six(details.points[5]);
-        set_seven(details.points[6]);
-        set_eight(details.points[7]);
-        set_nine(details.points[8]);
-        set_ten(details.points[9]);
+        set_title(details?.title);
+        set_desc(details?.desc);
+        set_one(details?.points[0]);
+        set_two(details?.points[1]);
+        set_three(details?.points[2]);
+        set_four(details?.points[3]);
+        set_five(details?.points[4]);
+        set_six(details?.points[5]);
+        set_seven(details?.points[6]);
+        set_eight(details?.points[7]);
+        set_nine(details?.points[8]);
+        set_ten(details?.points[9]);
         set_prev_input_result('positive');
       }
       catch(err)
