@@ -7,14 +7,43 @@
   pointer-events: none;
   padding-bottom: 5rem;
 
+  &_loading{
+    margin-top: 5rem;
+    font-family: 'Amatic SC', sans-serif;
+    font-size: 3rem;
+    font-weight: bold;
+  }
+
   &_img{
     width: 100%;
     height: 50vh;
     object-fit: cover;
     object-position: center;
   }
+  &_title{
+    font-family: 'Amatic SC', sans-serif;
+    font-size: 3rem;
+    font-weight: bold;
+  }
+  &_desc, &_update_date{
+    font-family: 'Space Mono', sans-serif;
+  }
+  &_points{
+    list-style-type: none;
+    width: 100%;
+    text-align: center;
+    padding: 1rem 4rem;
+
+    li{
+      padding: 2rem 0;
+      font-family: 'Space Mono', sans-serif;
+      font-size: 1.5rem;
+      font-weight: 700;
+    }
+  }
 
   &_error{
+    margin-top: 5rem;
     font-family: 'Amatic SC', sans-serif;
     font-size: 3rem;
     font-weight: bold;

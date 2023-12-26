@@ -55,13 +55,18 @@ const Announcement = () => {
                         {
                           return(
                             point ?
-                              <li key={point}>{point}</li> :
+                              <>
+                                <li key={point}>
+                                  {point}
+                                </li>
+                                <hr/>
+                              </> :
                                 null
                           )                          
                         })
                     }
                   </ul>   
-                  <p className='announcement_section_update_date'>Last update on: {details.date}</p>             
+                  <p className='announcement_section_update_date'>Last updated on: {details.date}</p>             
                 </> :
                   <p className='announcement_section_error'>{result}</p>             
         }        
