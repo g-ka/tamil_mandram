@@ -1,9 +1,14 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import Hamburger_nav_bar from './Hamburger_nav_bar';
 import { faLock , faBars } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import useData from '../hooks/useData';
 
 const Header = () => {
+  
+  const { set_is_open } = useData();
+
   return (
     <header className='head'>
       <Link to='/' className='head_title'>
@@ -12,7 +17,13 @@ const Header = () => {
       <Link to='/admin' className='head_admin'>
         <FontAwesomeIcon icon={faLock}/>
       </Link>              
-      <FontAwesomeIcon className='head_menu' icon={faBars}/>      
+      <button 
+        className='head_menu'
+        onClick={() => set_is_open(prev => !prev)}
+      >
+        <FontAwesomeIcon className='head_menu_icon' icon={faBars} />
+        <Hamburger_nav_bar />  
+      </button>                    
     </header>
   )
 }

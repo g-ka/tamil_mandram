@@ -36,14 +36,22 @@
       display: none;
     }
   }
-
+  
   &_menu{
-    display: none;
-    cursor: pointer;
+    display: none;    
+    position: relative;
+    background-color: black;
+    border: none;
 
     @include mq.responsive('lg')
     {
       display: inline-block;
+    } 
+
+    &_icon{
+      color: white;
+      font-size: 1rem;
+      cursor: pointer;
     }
   }
 }

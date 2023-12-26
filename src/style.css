@@ -53,12 +53,19 @@ body {
 }
 .head_menu {
   display: none;
-  cursor: pointer;
+  position: relative;
+  background-color: black;
+  border: none;
 }
 @media only screen and (max-width: 1020px) {
   .head_menu {
     display: inline-block;
   }
+}
+.head_menu_icon {
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
 }
 
 .hero_section {
@@ -1201,6 +1208,27 @@ body {
 }
 .nav_top_icon:hover {
   transform: translateY(-10%);
+}
+
+.ham_nav {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: black;
+  border: 2px solid white;
+  border-radius: 10px;
+  position: absolute;
+  top: 20px;
+  right: 0;
+  z-index: 101;
+}
+.ham_nav_link {
+  text-decoration: none;
+  font-family: "Amatic SC", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: white;
 }
 
 .foot {
