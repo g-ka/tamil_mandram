@@ -25,8 +25,12 @@
     font-size: 3rem;
     font-weight: bold;
   }
-  &_desc, &_update_date{
+  &_desc{
+    margin-top: 2rem;
+    padding: 0 6rem;
     font-family: 'Space Mono', sans-serif;
+    font-size: 1.2rem;
+    text-align: center;
   }
   &_points{
     list-style-type: none;
@@ -39,8 +43,11 @@
       font-family: 'Space Mono', sans-serif;
       font-size: 1.5rem;
       font-weight: 700;
-    }
+    }      
   }
+  &_update_date{
+    font-family: 'Space Mono', sans-serif;
+  }  
 
   &_error{
     margin-top: 5rem;

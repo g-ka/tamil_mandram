@@ -1060,8 +1060,12 @@ body {
   font-size: 3rem;
   font-weight: bold;
 }
-.announcement_section_desc, .announcement_section_update_date {
+.announcement_section_desc {
+  margin-top: 2rem;
+  padding: 0 6rem;
   font-family: "Space Mono", sans-serif;
+  font-size: 1.2rem;
+  text-align: center;
 }
 .announcement_section_points {
   list-style-type: none;
@@ -1074,6 +1078,9 @@ body {
   font-family: "Space Mono", sans-serif;
   font-size: 1.5rem;
   font-weight: 700;
+}
+.announcement_section_update_date {
+  font-family: "Space Mono", sans-serif;
 }
 .announcement_section_error {
   margin-top: 5rem;
