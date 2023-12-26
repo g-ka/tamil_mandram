@@ -1,3 +1,5 @@
+@use "../../abstract/media_queries" as mq;
+
 .announcement_section{
   display: flex;
   flex-direction: column;
@@ -31,6 +33,13 @@
     font-family: 'Space Mono', sans-serif;
     font-size: 1.2rem;
     text-align: center;
+
+    @include mq.responsive('xs')
+    {
+      font-size: 1rem;
+      padding: 0 2rem;
+      margin-top: 1rem;
+    }
   }
   &_points{
     list-style-type: none;
@@ -38,11 +47,23 @@
     text-align: center;
     padding: 1rem 4rem;
 
+    @include mq.responsive('xs')
+    {
+      padding: 1rem 2rem;
+    }
+
     li{
       padding: 2rem 0;
       font-family: 'Space Mono', sans-serif;
       font-size: 1.5rem;
       font-weight: 700;
+
+      @include mq.responsive('xs')
+      {
+        font-size: 1.1rem;
+        font-weight: 600;
+        padding: 1rem 0;
+      }
     }      
   }
   &_update_date{

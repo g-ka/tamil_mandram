@@ -1067,17 +1067,36 @@ body {
   font-size: 1.2rem;
   text-align: center;
 }
+@media only screen and (max-width: 455px) {
+  .announcement_section_desc {
+    font-size: 1rem;
+    padding: 0 2rem;
+    margin-top: 1rem;
+  }
+}
 .announcement_section_points {
   list-style-type: none;
   width: 100%;
   text-align: center;
   padding: 1rem 4rem;
 }
+@media only screen and (max-width: 455px) {
+  .announcement_section_points {
+    padding: 1rem 2rem;
+  }
+}
 .announcement_section_points li {
   padding: 2rem 0;
   font-family: "Space Mono", sans-serif;
   font-size: 1.5rem;
   font-weight: 700;
+}
+@media only screen and (max-width: 455px) {
+  .announcement_section_points li {
+    font-size: 1.1rem;
+    font-weight: 600;
+    padding: 1rem 0;
+  }
 }
 .announcement_section_update_date {
   font-family: "Space Mono", sans-serif;
