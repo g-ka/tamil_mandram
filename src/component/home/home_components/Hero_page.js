@@ -24,14 +24,6 @@ const Hero_page = () => {
         <p className='hero_section_heading_desc'>
           The official tamil linguistic club of NIT Trichy
         </p>
-        <div className='hero_section_heading_button'>
-          <Link to='/announcement' className='hero_section_heading_button_link'>
-            <button>              
-              <p className='top'>Announcement</p>
-              <p className='bottom'>Announcement</p>
-            </button>
-          </Link>
-        </div>
       </div>
       <img  className='hero_section_snail' src={snail}/>
       <img  className='hero_section_butterfly' src={butterfly}/>
