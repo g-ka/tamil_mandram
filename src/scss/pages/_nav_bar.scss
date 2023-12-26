@@ -1,11 +1,11 @@
 .nav{
   background-color: black;  
   font-family: 'Amatic SC', sans-serif;
-  font-size: 2rem;
+  font-size: 1.7rem;
   font-weight: 900;
   display: inline-flex;
   column-gap: 4rem;
-  padding: 1rem 2rem;
+  padding: 0.5rem 1.5rem;
   border: none;
   border-radius: 50px;
   justify-content: center;
@@ -33,7 +33,7 @@
     cursor: pointer;
 
     &_icon{
-      font-size: 2rem;
+      font-size: 1.5rem;
       transition: transform 0.2s;
     }
     &_icon:hover{
