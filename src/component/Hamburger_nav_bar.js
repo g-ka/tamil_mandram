@@ -9,7 +9,10 @@ const Hamburger_nav_bar = () => {
   return (
     <nav 
       className='ham_nav'
-      style={{ opacity: is_open ? '1' : '0' }}
+      style={{ 
+        opacity: is_open ? '1' : '0',
+        pointerEvents: is_open ? 'auto' : 'none' 
+      }}
     >
       <Link to='/' className='ham_nav_home ham_nav_link'>HOME</Link>
       <Link to='/announcement' className='ham_nav_announcement ham_nav_link'>ANNOUNCEMENT</Link>

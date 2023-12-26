@@ -1,3 +1,5 @@
+@use "../abstract/media_queries" as mq;
+
 .nav{
   background-color: black;  
   font-family: 'Amatic SC', sans-serif;
@@ -14,6 +16,11 @@
   bottom: 3%;
   left: 50%;
   transform: translateX(-50%);
+
+  @include mq.responsive('lg')
+  {
+    display: none;
+  }
 
   &_link{
     text-decoration: none;
