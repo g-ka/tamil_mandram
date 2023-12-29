@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import Axios from '../../api/Axios';
 import useData from '../../hooks/useData';
 
@@ -94,9 +94,14 @@ const Admin_log = () => {
           type='submit'
           className='admin_log_section_form_button'
         >
-          Log In
+          <p className='top'>Log In</p>
+          <p className='bottom'>Log In</p> 
         </button>    
       </form>
+      <div className='admin_log_section_link'>
+        <p>New Admin?</p>
+        <Link to='/admin_reg'>Register</Link>
+      </div>
     </section>
   )
 }
