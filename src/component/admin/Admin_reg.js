@@ -1,5 +1,5 @@
-import React, { useRef, useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import React, { useState } from 'react';
+import { Link, useNavigate } from 'react-router-dom';
 import Axios from '../../api/Axios';
 
 const Admin_reg = () => {
@@ -127,8 +127,8 @@ const Admin_reg = () => {
           />
         </div>     
         <button
-          type='submit'
           className='admin_reg_section_form_button'
+          type='submit'          
           style={{
             cursor: is_loading || button != 'Register' ? 'not-allowed' : 'pointer',
             pointerEvents: is_loading || button != 'Register' ? 'none' : 'auto',
@@ -136,9 +136,14 @@ const Admin_reg = () => {
             color: button == 'Registered' || button == 'Failed' ? 'white' : 'black'
           }}
         >
-          {button}
-        </button>   
+          <p className='top'>{button}</p>
+          <p className='bottom'>{button}</p>  
+        </button>           
       </form>
+      <div className='admin_reg_section_link'>
+        <p>Already registered?</p>
+        <Link to='/admin_log'>Log in</Link>
+      </div>
     </section>
   )
 }
