@@ -67,6 +67,9 @@
     column-gap: 1rem;
     font-family: 'Space Mono', sans-serif;
 
+    p{
+      pointer-events: none;
+    }
     a{
       text-decoration: none;
     }

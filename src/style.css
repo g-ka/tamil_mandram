@@ -1146,6 +1146,9 @@ body {
   column-gap: 1rem;
   font-family: "Space Mono", sans-serif;
 }
+.admin_reg_section_link p {
+  pointer-events: none;
+}
 .admin_reg_section_link a {
   text-decoration: none;
 }
@@ -1211,6 +1214,9 @@ body {
   display: flex;
   column-gap: 1rem;
   font-family: "Space Mono", sans-serif;
+}
+.admin_log_section_link p {
+  pointer-events: none;
 }
 .admin_log_section_link a {
   text-decoration: none;
