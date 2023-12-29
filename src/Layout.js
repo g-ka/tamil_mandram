@@ -11,9 +11,10 @@ const Layout = () => {
 
   return (
     <main
+    className='summa'
       onClick={e => {
-        const text = e.target.className.baseVal;   
-        if(!text?.includes('head_menu_icon')) set_is_open(false);  
+        const text = e.target.className;   
+        if(!text?.includes('ham_nav') || text?.includes('ham_nav_link')) set_is_open(false);          
       }}
     >
       <Public_header />
