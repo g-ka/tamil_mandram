@@ -18,10 +18,9 @@ const Header = () => {
         <FontAwesomeIcon icon={faLock}/>
       </Link>              
       <button 
-        className='head_menu'
-        onClick={() => set_is_open(prev => !prev)}
+        className='head_menu'        
       >
-        <FontAwesomeIcon className='head_menu_icon' icon={faBars} />
+        <FontAwesomeIcon className='head_menu_icon' icon={faBars} onClick={(e) => set_is_open(prev => !prev)} />
         <Hamburger_nav_bar />  
       </button>                    
     </header>

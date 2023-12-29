@@ -13,7 +13,7 @@ const Layout = () => {
     <main
       onClick={e => {
         const text = e.target.className.baseVal;   
-        if(!text?.includes('head_menu_icon')) set_is_open(false);        
+        if(!text?.includes('head_menu_icon')) set_is_open(false);  
       }}
     >
       <Public_header />
