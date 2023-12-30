@@ -11,10 +11,9 @@ const Layout = () => {
 
   return (
     <main
-    className='summa'
       onClick={e => {
-        const text = e.target.className;   
-        if(!text?.includes('ham_nav') || text?.includes('ham_nav_link')) set_is_open(false);          
+        const text = typeof(e.target.className)==='object' ? '' : e.target.className;  
+        if(!text?.includes('ham_nav') || text?.includes('ham_nav_link')) set_is_open(false);                  
       }}
     >
       <Public_header />
