@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Outlet, useLocation, Navigate, useNavigate } from 'react-router-dom';
 import useData from './hooks/useData';
 
@@ -7,6 +7,10 @@ const Auth_layout = () => {
   const { auth } = useData();
   const location = useLocation();
   const navigate = useNavigate();
+
+  useEffect(() => {
+    window.scrollBy(0, -window.scrollY);
+  }, []);
 
   return (
     <>

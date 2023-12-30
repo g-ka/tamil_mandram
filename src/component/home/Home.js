@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Hero_page from './home_components/Hero_page';
 import Achievements_page from './home_components/Achievements_page';
 import Teams_section from './home_components/Teams_section';
@@ -7,6 +7,11 @@ import Testimonials_section from './home_components/Testimonials_section';
 import Contact_section from './home_components/Contact_section';
 
 const Home = () => {
+
+  useEffect(() => {
+    window.scrollBy(0, -window.scrollY);
+  }, []);
+
   return (
     <>
       <Hero_page />
