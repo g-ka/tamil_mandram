@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import Axios from '../../../api/Axios';
 import contact from '../../../images/home/contact_section/contact.png';
 

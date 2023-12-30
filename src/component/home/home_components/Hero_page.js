@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import arrow from '../../../images/home/hero_section/arrow.png';
 import snail from '../../../images/home/hero_section/snail.png';
 import butterfly from '../../../images/home/hero_section/butterfly.png';
